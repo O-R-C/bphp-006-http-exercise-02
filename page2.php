@@ -8,4 +8,4 @@ header("Cache-Control: no-cache");
 
 // содержимое
 require "getHTML.php";
-echo getHTML("Страница 2", "page2.php");
+echo getHTML("Страница 2", basename(__FILE__));
