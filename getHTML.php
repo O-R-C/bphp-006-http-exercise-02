@@ -59,6 +59,8 @@ function getLinks(string $currentPage, array $urls): string
   foreach ($urls as $index => $key) {
     [$url, $title] = $key;
 
+    if ($url === 'page2.php') $url .= '?text=Hello from GET request';
+
     if ($url === $currentPage) continue;
     $links .= "<li><a href='$url'>$title</a></li>";
     $links .= $index + 1 < count($urls) ? "\n\t\t\t" : '';

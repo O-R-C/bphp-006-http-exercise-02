@@ -2,10 +2,13 @@
 
 declare(strict_types=1);
 
+$txt = $_GET['text'] ?? 'Ничего не передано';
+
 // заголовки
-header("Content-Type: text/html; charset=utf-8");
-header("Cache-Control: no-cache");
+header("Content-Type: text/plain; charset=utf-8");
+header("Content-Disposition: attachment; filename=page2.txt");
+header("Content-Length: " . mb_strlen($txt));
+
 
 // содержимое
-require "getHTML.php";
-echo getHTML("Страница 2", basename(__FILE__));
+echo $txt;
