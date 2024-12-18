@@ -15,7 +15,7 @@ echo "    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 echo "    <title>Задание 2</title>";
 echo "</head>";
 echo "<body>";
-echo "<h1>Задание 2: создаем HTML-страницы</h1>";
+echo "<h1 style='text-align: center; margin-top: 50px;'>Задание 2: создаем HTML-страницы</h1>";
 echo "<div style='text-align: center; margin-top: 50px; width: 800px; margin-left: auto; margin-right: auto;'>";
 echo "<ul style='list-style-type: none; margin: 0; padding: 0; font-size: 24px; font-weight: bold; display: flex; justify-content: space-between;'>";
 echo "<li><a href='page1.php'>Страница 1</a></li>";
